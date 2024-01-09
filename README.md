@@ -22,5 +22,6 @@ apply the fourier transform to this output.
 
 What you will get is twice the resolution in time and frequency, for twice the samples processed.
 This is not the equivalant of processing twice as many samples!
-it also does not work in the respect that there are some aliasing issues and when you attempt this on carriers,
-there will be aliased carriers. its only good for non-linear impulse chains.
+This will also add some aliasing.
+To remove the aliasing, just do this again but substitute zeros for the original segment, 
+then subtract this product from your first output.
