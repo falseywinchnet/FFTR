@@ -1,8 +1,8 @@
 # FFTR
-Code and explanations for the Fourier Residual Transform
+Code and explanations for the Short Time Fourier Residual Transform
 
 
-The Fourier Residual Transform is difficult for me to explain.
+The Short Time Fourier Residual Transform is difficult for me to explain.
 I am not a accredited mathematician, I am not a certified engineer.
 I was exploring different ways to improve time and frequency resolution.
 I thought about impulse chains and how they must work.
@@ -10,7 +10,7 @@ I approached the problem intuitively, as must have all the early scientists.
 
 What I discovered, I think, merits publishing, and perhaps an entry on arxiv
 
-The FFT Residual method consists of the following steps:
+The Short Time Fourier Residual method consists of the following steps:
 
 Take the segment of samples you wish to process with the Fourier Transform(ie, the FFT)
 take larger run of samples from a very large interval after the segment.
@@ -22,3 +22,5 @@ apply the fourier transform to this output.
 
 What you will get is twice the resolution in time and frequency, for twice the samples processed.
 This is not the equivalant of processing twice as many samples!
+it also does not work in the respect that there are some aliasing issues and when you attempt this on carriers,
+there will be aliased carriers. its only good for non-linear impulse chains.
