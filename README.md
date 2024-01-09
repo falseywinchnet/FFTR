@@ -1,4 +1,4 @@
-# FFTR
+# STFRT
 Code and explanations for the Short Time Fourier Residual Transform
 
 
